@@ -5,3 +5,7 @@ body {
 p {
   background-color: orange
 }
+
+/* remember IDs can be used one time, classes can be used multiple times
+ids are in css using #idname and classes are defined using .classname */
+
