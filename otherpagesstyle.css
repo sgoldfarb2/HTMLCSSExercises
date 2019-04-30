@@ -1,0 +1,58 @@
+h1 {
+  font-family: mobsters;
+  font-size: 200px;
+  color: red;
+  text-shadow: 5px 5px black;
+  text-align: center;
+}
+
+p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+li {
+  color: #9b202a;
+ }
+
+ body{
+   background-color: #ede8e8;
+ }
+
+.topnav {
+background-color: white;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: red;
+}
+
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: blue;
+}
+
+h2 {
+font-size: 60px;
+text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.familyphoto {
+/* need to align to center */
+}
