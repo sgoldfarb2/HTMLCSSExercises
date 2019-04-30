@@ -1,0 +1,59 @@
+.hello{
+  background-color: yellow;
+  font-size: 90px;
+  width: 100%;
+  border-width: 10px;
+  border-top-style: dashed;
+  /* the above top-style is going to only apply the border to the top */
+  border-color: black;
+  padding: 10px;
+  margin: 30px;
+}
+/* there is border-width, border-style, border-color, and border */
+/* can just use border and then lay out your things as width, style, color example: border: 5px, dashed, blue */
+/* padding - helps you add space where the border is and the content*/
+/* the margin sits outside the edge of the border. can create a margin to create a gap between adjacent boxes */
+/* when you say which of each (top bottom left right) you want to be, it goes clockwise, top, right, bottom, left */
+
+.box{
+  background-color: #ccc;
+  padding: 50px;
+  width: 240px;
+  height: 240px;
+  border: 20px solid black;
+  margin: 40px;
+  overflow: hidden;
+}
+/* overflow will cut off your image at a certain place, so it will contain it to the box */
+
+img{
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+/* since images are inline elements, to use the margin-left and margin-right and such, you need to turn the image into a block element to center it */
+}
+
+/* box-sizing property with a value of border-box will make sure that your box total is the height and width and padding and border, instead of expanding your box when you add padding and add a border */
+
+.borderBox{
+  background-color: #ccc;
+  padding: 50px;
+  width: 240px;
+  height: 240px;
+  border: 20px solid black;
+  margin: 40px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* see .borderBox versus .box. they have the exact same info, but .borderBox uses border-box, so that's why that div box is so much smaller */
+
+
+/* if you try and apply height and width to inline elements, it won't work! */
+/* you can change block level elements to inline elements and inline elements to block level elements using display!*/
+
+/* if you want to move a box to the center of the page, you would use margin auto on the margin-left and margin-right property */
+
+/* Controlling the positioning of elements */
+/* position properties: */
+/* static, absolute, fixed, relative, sticky */
