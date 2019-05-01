@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    /* < !-- FLEXBOX DAY ! ! -->
+    < !-- we have a parent container where we define display: flex and all of the children in that container will have flex capabilities --> */
+    .box {
+      height: 200px;
+      width: 200px;
+      background-color: tomato;
+      color: white;
+      font-weight: bold;
+      margin: 5px;
+      font-size: 30px;
+      /* display: inline-block;
+      text-align: center;
+      line-height: 190px;
+      the above stuff is what we needed when we didn't know flexbox!*/
+    }
+
+    .container {
+      width: 100%;
+      height: 1000px;
+      display: flex;
+      /* within this container, we can change how we want our children to align because they automatically align horizontally! */
+      flex-direction: column;
+      /* you can use column-reverse or row-reverse to reverse the items on your page! so cool! */
+      justify-content: flex-end;
+      /* since our flex direction is row, our main axis is the x axis, if we were using flex direction column, we'd be working on our y axis*/
+      /* flex-end is justifying all of our content to the right, and flex-start is going to justify to the left. we can't use flex-grow with this because it takes up the entire width of our container! space-between will put even margin between the boxes, space-around gives equal margin around both sides of the box */
+      background-color: green;
+      justify-content: center;
+      /* justify content always applies to the main axis (can be x or y) */
+      align-items: center;
+      /* align items always applies to the x axis, can use stretch to stretch things the entire length of your container, baseline will */
+
+      flex-wrap: wrap;
+      /* if you have too many containers, by default, all of your containers will try and fit in one row, so you can set a property to make them wrap, which is flex-wrap: wrap */
+
+
+    }
+
+    .order1 {
+      order: 1;
+      /* whatever has the highest order, will stack first, since the default is 0, order 1 will come after the other boxes */
+    }
+
+    .flexgrow1 {
+      flex-grow: 1;
+    }
+
+    .flexgrow2 {
+      flex-grow: 2;
+      /* flex-grow 2 will be twice the size of flex-grow 1. will divide up the container to make everything fit. so you can't have a standardized width for this to work, because you need to let the containers shift as they need*/
+    }
+
+    .alignself {
+      align-self: flex-start;
+      /* this will override the align-items: center in our parent container */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box alignself">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+</body>
+
+</html>

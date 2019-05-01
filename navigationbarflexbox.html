@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .flexbox {
+      display: flex;
+    }
+
+    .spacebetween {
+      justify-content: space-between;
+    }
+
+    nav {
+      background-color: lightblue;
+      padding: 0px 5px 0px 5px;
+      list-style: none;
+    }
+
+    li {
+
+      list-style: none;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: yellow;
+    }
+
+    .flexgrow1 {
+      flex-grow: 1;
+    }
+
+    .flexgrow2 {
+      flex-grow: 2;
+    }
+
+    .flexgrow3 {
+      flex-grow: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="flexbox spacebetween flexgrow1">
+    <ul class="flexgrow2">
+      <li><a href="#">Company Name</a></li>
+    </ul>
+    <ul class="flexbox spacebetween flexgrow2">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .flexbox {
+      display: flex;
+    }
+
+    .flexgrow1 {
+      flex-grow: 1;
+    }
+
+    .flexgrow2 {
+      flex-grow: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h2>Input Addon</h2>
+    <p>With FlexBox it is easy to place an add-on to the start of an input or
+      a button to the end of an input. An add-on can be text or an image. An add-on
+      is used to explain to a user what type of information should be put in the
+      input field.</p>
+    <hr>
+    <h3>Example of Addon</h3>
+    <div>
+      <div class="flexbox">
+        <span>Amount</span>
+        <input class="flexgrow1">
+      </div>
+      <div class="flexbox">
+        <input class="flexgrow1">
+        <button>Submit</button>
+      </div>
+      <div class="flexbox">
+        <span>Amount</span>
+        <input class="flexgrow1">
+        <button>Submit</button>
+      </div>
+    </div>
+</body>
+
+</html>

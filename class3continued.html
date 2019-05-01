@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* responsive design */
+    /* always design for mobile first */
+    /* there are different responsive techniques, fluid widths (using percentages), media queries, and responsive images */
+    /* media queries allow us to create css rules based on parameters like screen size */
+    /* syntax: @media < media-type > and (expression){css rules} */
+
+    .mydiv {
+      background-color: red;
+      color: white;
+      height: 300px;
+      width: 250px;
+      display: inline-block;
+    }
+
+    /* if for your phone size screen, you want a different background color, you would do this: */
+    @media screen and (max-width: 800px) {
+      .mydiv {
+        background-color: yellow;
+        color: black;
+        height: 200px;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mydiv">hello world</div>
+  <div class="mydiv">hello world</div>
+</body>
+
+</html>
