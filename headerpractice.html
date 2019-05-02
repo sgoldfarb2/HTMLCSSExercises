@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .header {
+      min-width: 100%;
+      height: 350px;
+      overflow: hidden;
+
+    }
+
+    .imageposition {
+      position: relative;
+      top: -250px;
+      margin: 0px;
+
+    }
+
+    .overlay {
+      background-color: orange;
+      min-width: 100%;
+      height: 350px;
+      position: absolute;
+      z-index: 2;
+      top: 0px;
+      left: 0px;
+      opacity: .5;
+    }
+
+    .parentheader {
+      position: relative;
+    }
+
+    body {
+      margin: 0px;
+    }
+
+    .text {
+      position: absolute;
+      z-index: 3;
+      color: white;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parentheader">
+    <div class="text">
+      Hello Ducks of Houston!
+    </div>
+    <div class="overlay">
+    </div>
+    <div class="header">
+      <img class="imageposition" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Panoramic_Houston_skyline.jpg"
+        alt="houston">
+    </div>
+  </div>
+
+</body>
+
+</html>
